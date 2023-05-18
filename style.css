@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    scroll-behavior: smooth;
+}
+
+/******************** Header ***************/
+
+.navgtion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1;
+    
+}
+header{
+    background-color: #130f0f;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.navgtion{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    direction: rtl;
+}
+ nav a:hover{
+    color: rgb(16, 134, 16);
+}
+.navgtion a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;  
+    font-size: larger; 
+}
+.tag{
+    margin: 0px;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+/***********Strat Logo***********/
+.logo{
+    color:rgb(0, 128, 255) blue(133, 75, 187);   
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 1.8em;
+    background-color: blanchedalmond;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 10px;
+    border:9px;
+    border-color: #ffd43b;
+}
+
+/***********End Logo********************/
+
+/*************** End Header ***************/
+
+
+
+
+
+/*********Start Main***********/
+
+/********start محتوى الرئيسي************/
+.main{
+    display: flex;
+    padding: 100px 200px;
+    align-items: flex-start;
+    background-image: url('images/تنزيل.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+    /* padding-bottom: 70px; */
+    flex-direction:column ;
+}
+.main-content{
+    display: inline-block;
+    padding-left:30px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: flex-start;
+
+}
+.main-content h2{
+    text-transform: uppercase;
+    text-shadow: 1em;
+    font-weight: 200;
+    text-decoration: solid;
+    color: black;
+}
+.main-content h2 span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1em;
+    font-weight: 700;
+    color: dodgerblue;
+    text-decoration: solid;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.main-content h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1em;
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(49, 190, 167);
+    text-decoration: solid;
+    padding-top: 10px;
+    margin-top:10px ;
+    margin-bottom:30px ;
+}
+
+/*****************End محتوى الرئيسي***********************/
+
+/********************زر تشغيل Start**************************/
+
+.main-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(61, 52, 117);
+    padding: 0.9375em 2.1875em;
+    background-color: #ffd43b;
+    font-size: large;
+    border: 1px;
+    border-color: rgb(61, 52, 117);
+    border-bottom: 3px;
+    border-radius: 15px;
+    border-style: solid;
+    margin: 10px 10px;
+    transition: 0.5s;
+}
+
+.main-btn:hover{
+    background-color: cornflowerblue;
+    transform: scale(1.1, 1.1);
+}
+
+
+/*******************End زر تشغيل***************************/
+
+/************************Strat Icons***************************/
+
+.soical-icons{
+    display: flex;
+    margin-top: 10px ;
+    color :#ffd43b;
+    padding-left: 95px;
+    letter-spacing: 0.5em;
+}
+
+
+.soical-icons .icons{
+   display: inline-block;
+   padding-right: 6px;
+   color: rgb(61, 52, 117);
+   transition: 0.5s;
+}
+
+
+.soical-icons .icons:hover {
+    transform: scale(1.1);
+    color: rgb(125, 107, 243);
+}
+
+.soical-icons .icons i{
+    display: inline-block;
+    padding-right: 6px;
+    font-size: x-large;
+}
+/*************************End Icons****************************/
+
+
+/***************Start Serviese**************************/
+
+.cards{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 100px 200px;
+    justify-content: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.titel{
+    display: flex;
+    justify-content: center;
+    color: rgb(61, 52, 117);
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.contaner{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    padding: 80px 20px ;
+    box-shadow: 0px 5px 10px #130f0f;
+    border-radius: 90px;
+    transition: 0.5s;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.card .icon{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: rgb(0, 128, 255);
+    margin-bottom: 30px;
+}
+
+.info{
+    width: 200px;
+}
+
+.info h4{
+    text-align: center;
+    color:rgb(0, 128, 255);
+    font-size: x-large;
+}
+
+.info p {
+   text-align: justify;
+    font-size: medium;
+}
+
+.contaner :hover{
+    transform:scale(1.1);
+}
+
+.services-cards{
+    background-color: #fff;
+}
+/***************End Serviese**************************/
+
+
+/*****************Start Projects***********************/
+
+.projects-cards{
+    background-color: #1d1d1d;
+}
+
+.card-projects{
+    background-color: rgb(218, 228, 231);
+    border-radius: 10px;
+}
+/**********************End Projects********************/
+
+/******************Start Contact*********************/
+
+.contact-cards{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 200px;
+}
+
+.contact-cards .contaner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+ .contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 30px;
+    padding: 60px 40px;
+    box-shadow: 1px 5px 15px #130f0f;
+    gap: 40px;
+}
+
+.contact-card .icon{
+    display: flex;
+    font-size: xx-large;
+    align-content: center;
+    color: dodgerblue;
+    justify-content: center;
+}
+
+.contact-card .info {
+    text-align: center;
+    font-size: large;
+    text-decoration: solid;
+    text-transform: uppercase;
+}
+
+/*********************End contact**************************/
+
+
+/**********************Start Footer**********************/
+
+.footer{
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+.footer .contaner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.soical-media-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.soical-media-footer .icons-footer{
+    margin-right: 5px;
+    color: #fff;
+    font-size: x-large;
+}
+/***********************End Footer*****************************/
